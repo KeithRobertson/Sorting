@@ -1,6 +1,8 @@
 *.class
 
 # Package Files #
+*.*~
+*.pyc
 *.jar
 *.war
 *.ear
