@@ -1,0 +1,1 @@
+A silly Bogosort program that will randomly shuffle the letters in a string until it hits the target string.
