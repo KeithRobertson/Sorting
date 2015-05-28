@@ -14,11 +14,10 @@ public class BogoSort {
 			System.out.println("Expected 2 arguments: String to be sorted, String to be expected");
 			System.exit(0);
 		}
-		Date startDate = new Date();
 		for (int i = 0; i < Integer.MAX_VALUE; i++) {
 			String s = randomSort(source);
+			System.out.println(s);
 			if (s.equals(target)) {
-				System.out.println(s);
 				break;
 			}
 			if (i == Integer.MAX_VALUE - 1) {
@@ -31,7 +30,7 @@ public class BogoSort {
 	}
 
 	public static String randomSort(String str) {
-		List<Character> lettersList = new ArrayList<Character>();
+		List<Character> lettersList = new ArrayList<>();
 		for(char c : str.toCharArray()) {
     		lettersList.add(c);
 		}
